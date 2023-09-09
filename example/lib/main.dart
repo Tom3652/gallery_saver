@@ -95,7 +95,7 @@ class _MyAppState extends State<MyApp> {
 
   void _recordVideo() async {
     ImagePicker()
-        .getVideo(source: ImageSource.camera)
+        .pickVideo(source: ImageSource.camera)
         .then((PickedFile recordedVideo) {
       if (recordedVideo != null && recordedVideo.path != null) {
         setState(() {
